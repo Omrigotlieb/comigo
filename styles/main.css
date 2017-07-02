@@ -1,3 +1,12 @@
+/*Todo*/
+/*intro, services solutions... new name*/
+
+/*General*/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 @media screen and (max-width: 700px),(max-device-width: 400px) {
   .top-navigation {
     display: none;
@@ -10,24 +19,258 @@ a {
   text-decoration-line: none;
 }
 
-
-  header .sub-nav:hover, header .sub-nav:focus {
-    background-color:#f14848;
-    color:white;
-  }
-
 a:focus {
   outline: none;
 }
 
-.call-to-action {
-  background-color:#f14848;
-  color:white;
+.button {
+  padding: 1em;
+  border-radius: 10em;
+  position: center;
+}
+
+.main-button {
+  color: #ffffff;
+  background-color: #f14848;
+}
+
+.secondary-button {
+  color: #ffffff;
+}
+
+/*Header area*/
+
+header {
+  display: flex;
+}
+
+header nav ul {
+  margin-left: 50%;
+  text-align: center;
+  border: 1px dashed ;
+  float: top;
+
+}
+
+.top-navigation ul {
+  float: right;
+}
+
+header .sub-nav:hover, header .sub-nav:focus, header .sub-nav li:focus  {
+  border: 2px  #f14848;
+  background-color: #f14848;
+  color: white;
+}
+
+header .sub-nav:hover{
+  border: 2px  #f14848;
+  background-color: #f14848;
+  color: white;
 }
 
 
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*First strip*/
+
+.main-strip {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  padding-top: 8em;
+  background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-featured-bg.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+}
+
+.main-strip h2 {
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.main-strip div {
+  display: inline-block;
+  width: 70%;
+}
+
+/*Second strip - Why Comigo*/
+
+.second-strip {
+  text-align: center;
+  height: 350px;
+}
+
+.second-strip div {
+  margin: 0 auto;
+  /*display: inline-block;*/
+  padding: 3em 0;
+  width: 400px;
+
+}
+
+.second-strip h2 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.block-center{
+  font-family: Tahoma,sans-serif;
+  font-weight: 100;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+
+/*Third strip - Engage users*/
+.engage {
+  width: 100%;
+  background-image: url("../assets/videos/video-soccer-750x422.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+/*fourth strip - home-section*/
+
+
+.home-section {
+  display: flex;
+
+}
+
+.home-div{
+  padding-top: 3em;
+  width: 50%;
+  height: 25em;
+}
+
+#enhance-any-tv-service {
+  background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-tv-service-bg1.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}
+
+#deploy-best-in-class-tv-service {
+  background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
+  background-position: left top, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}
+
+
+#enhance-any-tv-service > a {
+  text-align: center;
+  color: #f14848;
+  background-color: white;
+}
+
+
+/*Fifth strip - your content area*/
+
+.your-content {
+  width: 100%;
+  height: 35em;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-image: url("../assets/other/screen_whos_on.jpg");
+  background-position: right;
+  padding-top: 15em;
+  /*padding-bottom: 15em;*/
+
+}
+
+
+
+/*learn more area*/
+
+#learn-more ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*blog area*/
+
+/*//TODO change id to :nth-child*/
+  #comigos-experience {
+  background: url("../assets/blog/ibc_post_EI-750x508.png") no-repeat center center;
+}
+
+#what-we-learned {
+  background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#big-data-meets {
+  background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#comigo-will-bring {
+  background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
+  background-position: center center;
+}
+
+#quality {
+  background-image: url("../assets/blog/post_quality-750x508.jpeg");
+  background-position: center center;
+}
+
+#our-blog {
+  background-color: #f14848;
+}
+
+.blog-post a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.blog ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-post {
+  font-size: 0.6rem;
+  width: 16.6%;
+  height: 45em;
+  color: white;
+}
+
+
+/*footer area*/
+
+
+footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .footer-top {
-  background-color:#1e2024;
+  background-color: #1e2024;
 }
 
 .footer-top ul li {
@@ -42,24 +285,28 @@ a:focus {
   color: #f14848;
 }
 
-.engage ul h3:hover, .engage ul a:focus{
+.engage ul h3:hover, .engage ul a:focus {
   color: #f14848;
 }
 
-
-#omri-gotlieb-portfolio:hover, #omri-gotlieb-portfolio:focus{
+#omri-gotlieb-portfolio:hover, #omri-gotlieb-portfolio:focus {
   color: white;
 }
 
-.footer-bottom ul li:hover, .footer-bottom ul li a:focus{
+.footer-bottom ul li:hover, .footer-bottom ul li a:focus {
   color: white;
 }
 
 .footer-bottom {
-  background-color:#151515;
+  background-color: #151515;
+  color: white;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+
 }
 
-nav a:hover, nav a:focus{
+nav a:hover, nav a:focus {
   color: #f14848;
 }
 
