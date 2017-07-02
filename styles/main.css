@@ -1,0 +1,61 @@
+@media screen and (max-width: 700px),(max-device-width: 400px) {
+  .top-navigation {
+    display: none;
+    /*visibility: hidden;*/
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+header .sub-nav:hover, header .sub-nav:focus {
+  background-color:#f14848;
+  color:white;
+}
+
+.call-to-action {
+  background-color:#f14848;
+  color:white;
+}
+
+
+
+.footer-top {
+  background-color:#1e2024;
+}
+
+.footer-top ul li {
+  color: #fff;
+}
+
+.footer-top ul li li {
+  color: #7a7a7a;
+}
+
+.footer-top ul li li:hover, .footer-top ul li li a:focus {
+  color: #f14848;
+}
+
+.engage ul h3:hover, .engage ul a:focus{
+  color: #f14848;
+}
+
+
+#omri-gotlieb-portfolio:hover, #omri-gotlieb-portfolio:focus{
+  color: white;
+}
+
+.footer-bottom ul li:hover, .footer-bottom ul li a:focus{
+  color: white;
+}
+
+.footer-bottom {
+  background-color:#151515;
+}
+
+nav a:hover, nav a:focus{
+  color: #f14848;
+}
+
