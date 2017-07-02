@@ -1,7 +1,7 @@
 @media screen and (max-width: 700px),(max-device-width: 400px) {
   .top-navigation {
     display: none;
-    /*visibility: hidden;*/
+    /*visibility: hidden;a*/
   }
 }
 
