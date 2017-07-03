@@ -10,9 +10,14 @@ a {
   text-decoration-line: none;
 }
 
-header .sub-nav:hover, header .sub-nav:focus {
-  background-color:#f14848;
-  color:white;
+
+  header .sub-nav:hover, header .sub-nav:focus {
+    background-color:#f14848;
+    color:white;
+  }
+
+header a {
+  outline: none;
 }
 
 .call-to-action {
