@@ -1,16 +1,33 @@
 /*Todo*/
 /*intro, services solutions... new name*/
 
+
+/*Ask alex for calc and flex*/
+/*why comigo styling*/
+/*home services bg image alignment*/
+/*your content margin */
+/*Social button round bg + F, T*/
+/*svg bg color and square*/
+/*Read more blog post*/
+
+
+
 /*General*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: ProximaNova, 'Source Sans Pro', sans-serif;
 }
 
 @media screen and (max-width: 700px),(max-device-width: 400px) {
   .top-navigation {
     display: none;
-    /*visibility: hidden;ccc*/
   }
 }
 
@@ -34,40 +51,56 @@ a:focus {
   background-color: #f14848;
 }
 
-.secondary-button {
+.main-button.inverse {
+  color: #f14848;
+  background-color: #ffffff;
+}
+
+
+.white {
   color: #ffffff;
+}
+
+.black {
+  color: #000000;
 }
 
 /*Header area*/
 
 header {
   display: flex;
+  margin-bottom: 5em;
 }
 
 header nav ul {
   margin-left: 50%;
   text-align: center;
-  border: 1px dashed ;
   float: top;
-
+  border: 1px dashed;
 }
 
 .top-navigation ul {
   float: right;
 }
 
-header .sub-nav:hover, header .sub-nav:focus, header .sub-nav li:focus  {
-  border: 2px  #f14848;
+nav a.sub-nav  {
+  height: 100%;
+  display: inline-block;
+}
+
+header .sub-nav:hover, header .sub-nav a:hover {
   background-color: #f14848;
   color: white;
 }
 
-header .sub-nav:hover{
-  border: 2px  #f14848;
+nav a:focus {
+  color: #f14848;
+}
+
+nav a.sub-nav:focus {
   background-color: #f14848;
   color: white;
 }
-
 
 header ul {
   display: flex;
@@ -76,15 +109,14 @@ header ul {
   margin: 0;
 }
 
-
-/*First strip*/
+/*Main strip*/
 
 .main-strip {
   text-align: center;
   width: 100%;
   height: 500px;
   padding-top: 8em;
-  background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-featured-bg.png");
+  background-image: url("../assets/main-bg/home-brain-image-new-1920x816.png"), url("../assets/main-bg/home-featured-bg.png");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
@@ -106,6 +138,7 @@ header ul {
 
 .second-strip {
   text-align: center;
+  color: #3d3d3d;
   height: 350px;
 }
 
@@ -123,14 +156,13 @@ header ul {
   font-weight: 100;
 }
 
-.block-center{
-  font-family: Tahoma,sans-serif;
+.block-center {
+  font-family: Tahoma, sans-serif;
   font-weight: 100;
   text-align: center;
   line-height: 1.4em;
   font-size: 1em;
 }
-
 
 /*Third strip - Engage users*/
 .engage {
@@ -138,44 +170,64 @@ header ul {
   background-image: url("../assets/videos/video-soccer-750x422.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-
+  margin-bottom: 3em;
 }
 
 /*fourth strip - home-section*/
 
-
 .home-section {
   display: flex;
-
+  height: 600px;
 }
 
-.home-div{
-  padding-top: 3em;
+.home-div {
+  margin: 0 auto;
+  display: block;
+  line-height: 1.2em;
+  /*padding-left: 10em;*/
+  padding-top: 15em;
   width: 50%;
-  height: 25em;
+  font-size: 18px;
 }
 
-#enhance-any-tv-service {
+.home-div:first-child {
+  padding-left: 20%;
+}
+
+.home-div:nth-child(2) {
+  /*position: absolute;*/
+  left: 20%;
+  right: 0;
+}
+
+.home-div h2 {
+  /*border: none;*/
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.enhance-any-tv-service {
   background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-tv-service-bg1.png");
-  background-position: center, center;
+  background-position: center top, center;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
+  background-size: 45%, auto;
 }
 
 #deploy-best-in-class-tv-service {
   background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
-  background-position: left top, center;
+  background-position: left center, center;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
+  background-size: 45%, auto;
 }
 
-
-#enhance-any-tv-service > a {
+.enhance-any-tv-service > a {
   text-align: center;
   color: #f14848;
   background-color: white;
 }
-
 
 /*Fifth strip - your content area*/
 
@@ -191,11 +243,13 @@ header ul {
 
 }
 
-
-
 /*learn more area*/
 
-#learn-more ul {
+.learn-more {
+  display: flex;
+}
+
+.learn-more ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -203,13 +257,13 @@ header ul {
   margin: 0;
 }
 
-
-
 /*blog area*/
 
 /*//TODO change id to :nth-child*/
-  #comigos-experience {
-  background: url("../assets/blog/ibc_post_EI-750x508.png") no-repeat center center;
+#comigos-experience {
+  background: url("../assets/blog/ibc_post_EI-750x508.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #what-we-learned {
@@ -227,21 +281,26 @@ header ul {
 #comigo-will-bring {
   background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #quality {
   background-image: url("../assets/blog/post_quality-750x508.jpeg");
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #our-blog {
   background-color: #f14848;
+  width: calc(100%/6);
 }
 
-.blog-post a {
-  display: block;
-  height: 100%;
-  width: 100%;
+.blog {
+  display: flex;
+}
+
+.blog-post-list {
+  width: calc(100%/6*5);
 }
 
 .blog ul {
@@ -253,17 +312,22 @@ header ul {
 }
 
 .blog-post {
+  display: block;
   font-size: 0.6rem;
-  width: 16.6%;
+  width: 20%;
   height: 45em;
   color: white;
 }
 
+.blog-post a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 /*footer area*/
 
-
-footer ul{
+footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -305,8 +369,3 @@ footer ul{
   flex-direction: row;
 
 }
-
-nav a:hover, nav a:focus {
-  color: #f14848;
-}
-
