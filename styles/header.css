@@ -51,7 +51,7 @@ nav.top-navigation > ul > li + li {
   display: block;
   list-style: none;
   position: absolute;
-  top:0;
+  top:100%;
   right:0;
   width: 100%;
   margin: 0;
@@ -63,44 +63,94 @@ ul.first-level-nav {
 }
 
 ul.sub-nav{
-  display: none;
+  display: block;
   position: absolute;
   top:100%;
   left:0;
   width:100%;
-  height:66px;
+  height:50px;
 }
 
-/*.first-level-nav >  li:hover ~*/
-.first-level-nav > li:hover ul.sub-nav{
-  display: block;
-  /*margin:0;*/
-  /*width: 100%;*/
-}
-
-.first-level-nav > .second-level-nav > li:hover ul.sub-nav > .third-level{
-  display: block;
-  margin:6px;
-  /*width: 100%;*/
-}
-
-ul.third-level{
-  position: absolute;
-  top: 100%;
-}
-
-/*ul.sub-nav-our-solutions li.second-level-nav a{*/
 .sub-nav li.second-level-nav{
+  width:33.333%;
+}
+
+.sub-nav li.third-level-nav{
+  width:50%;
+}
+
+.sub-nav li{
   display: inline-block;
   background-color: #ffffff;
   margin:0;
   padding:0;
-  width:33.333%;
 }
 
-li.second-level-nav:hover {
+.sub-nav a {
+  display: block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+
+
+
+.sub-nav li a:hover {
   background-color: #f14848;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*li.third-level-nav:hover {*/
+  /*background-color: #f14848;*/
+/*}*/
+
+
+
+/*.first-level-nav >  li:hover ~*/
+/*.first-level-nav > li:hover ul.sub-nav{*/
+  /*display: block;*/
+  /*!*margin:0;*!*/
+  /*!*width: 100%;*!*/
+/*}*/
+
+/*.first-level-nav > .second-level-nav > li:hover ul.sub-nav > .third-level{*/
+  /*display: block;*/
+  /*margin:6px;*/
+  /*!*width: 100%;*!*/
+/*}*/
+
+/*ul.third-level{*/
+  /*position: absolute;*/
+  /*top: 100%;*/
+/*}*/
+
+/*ul.sub-nav-our-solutions li.second-level-nav a{*/
+
 
 /*.second-level-nav > li:hover ul.third-level-nav{*/
   /*display: block;*/
@@ -119,14 +169,6 @@ li.second-level-nav:hover {
   /*!*display:none;*!*/
 /*}*/
 
-
-.top-navigation li.third-level-nav{
-  position: relative;
-  margin: 10px;
-  /*top:100%;*/
-  /*left:0;*/
-  /*display:none;*/
-}
 
 
 /*ul.sub-nav-industry-insights > li.sub-nav{*/
