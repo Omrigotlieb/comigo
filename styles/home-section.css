@@ -1,0 +1,56 @@
+/*fourth strip - home-section*/
+
+.home-section {
+  /*position: relative;*/
+  display: flex;
+  height: 600px;
+}
+.home-div {
+  margin: 0 auto;
+  display: block;
+  line-height: 2;
+  /*padding-left: 10em;*/
+  padding-top: 15em;
+  width: 50%;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.home-div:first-child {
+  padding-left: 14%;
+  padding-top: 25%;
+}
+
+.home-div:nth-child(2) {
+  padding-left: 4%;
+  padding-top: 25%;
+}
+
+.home-div h2 {
+  /*border: none;*/
+  font-size: 2rem;
+  line-height: 1em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.enhance-any-tv-service {
+  background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-tv-service-bg1.png");
+  background-position: center 50px, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 45%, auto;
+}
+
+#deploy-best-in-class-tv-service {
+  background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
+  background-position: 20px 50px, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 41%, auto;
+}
+
+.enhance-any-tv-service > a {
+  text-align: center;
+  color: #f14848;
+  background-color: white;
+}

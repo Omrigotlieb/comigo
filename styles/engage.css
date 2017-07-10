@@ -1,0 +1,8 @@
+/*Third strip - Engage users*/
+.engage {
+  width: 100%;
+  background-image: url("../assets/videos/video-soccer-750x422.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 3em;
+}

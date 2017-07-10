@@ -1,0 +1,14 @@
+
+/*learn more area*/
+
+.learn-more {
+  position: relative;
+}
+
+.learn-more ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

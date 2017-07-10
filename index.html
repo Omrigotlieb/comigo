@@ -11,76 +11,84 @@
 <!--Chené-->
 <!--glow add now or after css?-->
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Comigo</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link href="http://www.comigo.com/wp-content/themes/comigo/css/webfonts.min.css?v=2.1.3" rel="stylesheet">
-
-
+    <link href="assets/fonts/icomoon/fonts/30A624_B_0.woff2" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon.ico"/>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main-strip.css">
+    <link rel="stylesheet" href="styles/why-comigo.css">
+    <link rel="stylesheet" href="styles/engage.css">
+    <link rel="stylesheet" href="styles/home-section.css">
+    <link rel="stylesheet" href="styles/your-content.css">
+    <link rel="stylesheet" href="styles/learn-more.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
+
 
   </head>
   <body>
 
     <header>
-      <a href="#">
-        <img src="assets/logo/comigo-logo-black.png" height="26" width="140"/>
+      <a href="#"  id="logo">
+        <img src="assets/logo/comigo-logo-black.png"height="26" width="140"/>
       </a>
       <nav class="top-navigation">
-        <ul>
+        <ul class="first-level-nav list-reset">
           <li>
-            <a href="#">Home</a>
+            <a href="#" id="home">Home</a>
           </li>
           <li>
-            <a href="#">Our Solutions</a>
-            <ul>
-              <li>
-                <a class="sub-nav" href="#">EI CLOUD</a>
-                <ul>
-                  <li>
-                    <a class="sub-nav" href="#">EIˣ</a>
+            <a href="#" id="our-solutions">Our Solutions</a>
+            <ul class="sub-nav list-reset">
+              <li class="second-level-nav" >
+                <a href="#">EI CLOUD</a>
+                <ul class="list-reset">
+                  <li class="third-level-nav">
+                    <a href="#">EIˣ</a>
                   </li>
-                  <li>
-                    <a class="sub-nav" href="#">EI MIND</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="sub-nav">EI MIDDLEWARE</a>
-                <ul>
-                  <li>
-                    <a class="sub-nav" href="#">ANDROID</a>
-                  </li>
-                  <li>
-                    <a class="sub-nav" href="#">COMIGO WHATCHAPP™ APPLICATIONS</a>
+                  <li class="third-level-nav">
+                    <a href="#">EI MIND</a>
                   </li>
                 </ul>
-              </li>
-              <li>
-                <a class="sub-nav" href="#">ANDROID STB</a>
+              </li><!--
+              --><li class="second-level-nav">
+                <a href="#" >EI MIDDLEWARE</a>
+                <ul class="third-level list-reset">
+                  <li class="third-level-nav">
+                    <a  href="#">ANDROID</a>
+                  </li>
+                  <li class="third-level-nav">
+                    <a href="#">COMIGO WHATCHAPP™ APPLICATIONS</a>
+                  </li>
+                </ul>
+              </li><!--
+              --><li class="second-level-nav">
+                <a href="#">ANDROID STB</a>
               </li>
             </ul>
           </li>
           <li>
             <a href="#">Partners</a>
           </li>
-          <li>
+          <li >
             <a href="#">Industry Insights</a>
-            <ul>
-              <li>
-                <a class="sub-nav" href="#">MEDIA</a>
-              </li>
-              <li>
-                <a class="sub-nav" href="#">BLOG</a>
-              </li>
-              <li>
-                <a class="sub-nav" href="#">INDUSTRY EVENTS</a>
+            <ul class="sub-nav list-reset">
+              <li class="second-level-nav" >
+                <a href="#">MEDIA ROOM</a>
+              </li><!--
+              --><li class="second-level-nav">
+                <a href="#">BLOG</a>
+              </li><!--
+              --><li class="second-level-nav">
+                <a href="#">INDUSTRY EVENTS</a>
               </li>
             </ul>
           </li>
@@ -98,7 +106,7 @@
       <section class="main-strip">
         <div>
           <h2>Make your OTT shine with the Experience Intelligence Cloud</h2>
-          <a href="#" class="button main-button">SCHEDULE A DEMO</a>
+          <a href="#" class="button main-button round">SCHEDULE A DEMO</a>
         </div>
       </section>
 
@@ -108,7 +116,7 @@
           <p class="block-center">Creating a TV that understands,<br>
             with automatic metadata enrichment<br>
             and Artificial Intelligence (AI)</p>
-          <a href="#" class="button main-button">LEARN MORE</a>
+          <a href="#" class="button main-button round">LEARN MORE</a>
         </div>
       </section>
 
@@ -195,19 +203,22 @@
         <div class="home-div white enhance-any-tv-service">
           <h2>ENHANCE ANY TV SERVICE</h2>
           <p>Comigo Experience Intelligence (EI)</p>
-          <a href="#" class="button main-button inverse">ENHANCE YOUR OTT TV</a>
+          <a href="#" class="button main-button inverse round">ENHANCE YOUR OTT TV</a>
         </div>
         <div class="home-div" id="deploy-best-in-class-tv-service">
           <h2>DEPLOY BEST IN CLASS TV SERVICE</h2>
           <p>Comigo's Android-based STB (HW&MW)</p>
-          <a href="#" class="button main-button">DEPLOY ON ANDROID</a>
+          <a href="#" class="button main-button round">DEPLOY ON ANDROID</a>
         </div>
       </section>
 
       <section class="your-content">
+        <div>
         <h2>YOUR CONTENT, COMIGO'S UNIQUE EXPERIENCE</h2>
         <p>Intelligence-based contextual WhatsApp™ Applications.</p>
-        <a href="#" class="button main-button">LEARN MORE</a>
+        <a href="#" class="button main-button round">LEARN MORE</a>
+        </div>
+        <img src="assets/other/screen_whos_on.jpg"/>
       </section>
 
       <section class="learn-more">
@@ -243,46 +254,43 @@
 
 
       <aside class="blog">
-
         <div class="white" id="our-blog">
+          <span>
           <h1>OUR BLOG</h1>
           <h2>THE INSIDE VIEW</h2>
-        </div>
-
-        <ul class="blog-post-list">
-          <li class="blog-post" id="comigos-experience">
+            </span>
+        </div><!--
+       --><ul class="blog-post-list"><!--
+          --><li class="blog-post" id="comigos-experience">
             <a href="#">
-              <p>Comigo’s Experience Intelligence Products Redefine TV – And You Can Find Out How at
-                IBC2016</p>
-              <p>READ MORE</p>
+              <p>Comigo’s Experience Intelligence Products Redefine TV – And You Can Find Out How at IBC2016</p>
+              <span class="button main-button" >READ MORE</span>
             </a>
-          </li>
-          <li class="blog-post" id="what-we-learned">
+          </li><!--
+        --><li class="blog-post" id="what-we-learned">
             <a href="#">
               <p>What We Learned at TV Connect 2016</p>
-              <p>READ MORE</p>
+              <span class="button main-button" >READ MORE</span>
             </a>
-          </li>
-          <li class="blog-post" id="big-data-meets">
+          </li><!--
+          --><li class="blog-post" id="big-data-meets">
             <a href="#">
               <p>Big Data Meets TV – The Next Phase In the TV Experience Evolution</p>
-              <p>READ MORE</p>
+              <span class="button main-button"> READ MORE</p>
             </a>
-          </li>
-          <li class="blog-post" id="comigo-will-bring">
+          </li><!--
+          --><li class="blog-post" id="comigo-will-bring">
             <a href="#">
               <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at TV Connect
                 2016</p>
-              <p>READ MORE</p>
+              <span class="button main-button" >READ MORE</span>
             </a>
-          </li>
-          <li class="blog-post" id="quality">
+          </li><!----><li class="blog-post" id="quality">
             <a href="#">
               <p>Quality, Set-Top-Boxes, Crappy Cars, and Caveat Emptor</p>
-              <p>READ MORE</p>
+              <span class="button main-button" >READ MORE</span>
             </a>
-          </li>
-        </ul>
+          </li><!----></ul>
       </aside>
     </main>
 
@@ -347,16 +355,23 @@
         <p>Developed by: <a href="omrigotlieb.com" id="omri-gotlieb-portfolio">Omri Gotlieb</a></p>
         <ul>
           <li>
-            <a href="https://www.facebook.com/Comigo-278941765529151">Facebook</a>
+            <a href="https://www.facebook.com/Comigo-278941765529151"><span class="icon-facebook"></span></a>
           </li>
           <li>
-            <a href="https://twitter.com/Comigo_Ltd">twitter</a>
+            <a href="https://twitter.com/Comigo_Ltd">
+              <span class="icon-twitter"></span>
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/2523681">Linkedin</a>
+            <a href="https://www.linkedin.com/company/2523681">
+              <span class="icon-linkedin2"></span>
+            </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/user/ComigoLtd">Youtube</a>
+            <a href="https://www.youtube.com/user/ComigoLtd">
+              <span class="icon-linkedin2"></span>
+            </a>
+
           </li>
           <li>
             <a href="#">fb</a>

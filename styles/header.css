@@ -1,0 +1,242 @@
+
+/*Header area*/
+
+#home {
+  color: #f14848;
+}
+
+header {
+  position: fixed;
+  display: block;
+  text-align: right;
+  height: 20px;
+  width: 100%;
+  background: white;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  font-size: 1.5rem;
+}
+
+#logo {
+  position: absolute;
+  left:0;
+  /*vertical-align: middle;*/
+}
+
+
+nav a:focus {
+  color: #f14848;
+}
+
+nav.top-navigation{
+  display: block;
+  top:0;
+  right:0;
+  position: relative;
+}
+
+nav.top-navigation ul li {
+  display: inline-block;
+  list-style:none;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+nav.top-navigation > ul > li + li {
+  margin-left: 22px;
+}
+
+.top-navigation ul {
+  display: block;
+  list-style: none;
+  position: absolute;
+  top:0;
+  right:0;
+  width: 100%;
+  margin: 0;
+}
+
+ul.first-level-nav {
+  position: relative;
+  /*width:*/
+}
+
+ul.sub-nav{
+  display: none;
+  position: absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  height:66px;
+}
+
+/*.first-level-nav >  li:hover ~*/
+.first-level-nav > li:hover ul.sub-nav{
+  display: block;
+  /*margin:0;*/
+  /*width: 100%;*/
+}
+
+.first-level-nav > .second-level-nav > li:hover ul.sub-nav > .third-level{
+  display: block;
+  margin:6px;
+  /*width: 100%;*/
+}
+
+ul.third-level{
+  position: absolute;
+  top: 100%;
+}
+
+/*ul.sub-nav-our-solutions li.second-level-nav a{*/
+.sub-nav li.second-level-nav{
+  display: inline-block;
+  background-color: #ffffff;
+  margin:0;
+  padding:0;
+  width:33.333%;
+}
+
+li.second-level-nav:hover {
+  background-color: #f14848;
+}
+
+/*.second-level-nav > li:hover ul.third-level-nav{*/
+  /*display: block;*/
+  /*!*margin:0;*!*/
+  /*!*width: 100%;*!*/
+/*}*/
+
+
+/*li.second-level-nav ~ a{*/
+  /*display: inline-block;*/
+  /*!*position: absolute;*!*/
+  /*!*top:0;*!*/
+  /*!*right:0;*!*/
+  /*border: 1px solid;*/
+  /*width:33%;*/
+  /*!*display:none;*!*/
+/*}*/
+
+
+.top-navigation li.third-level-nav{
+  position: relative;
+  margin: 10px;
+  /*top:100%;*/
+  /*left:0;*/
+  /*display:none;*/
+}
+
+
+/*ul.sub-nav-industry-insights > li.sub-nav{*/
+  /*!*display: inline-block;*!*/
+  /*position: absolute;*/
+  /*top:100px;*/
+  /*right:0;*/
+  /*display:none;*/
+/*}*/
+
+
+
+
+
+/*****************************/
+
+
+
+
+
+/*header .top-navigation {*/
+  /*display: inline-block;*/
+  /*position: relative;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*width:100%;*/
+/*}*/
+
+/*header > a {*/
+  /*!*display: inline-block;*!*/
+  /*position: absolute;*/
+  /*left:0;*/
+  /*top: 0;*/
+/*}*/
+
+/*header nav ul li {*/
+  /*display:inline-block;*/
+
+/*}*/
+
+/*header nav ul li + li {*/
+  /*margin-right: 20px;*/
+/*}*/
+
+/*.top-navigation .sub-nav-our-solutions{*/
+  /*position: absolute;*/
+  /*top:66px;*/
+  /*right:0;*/
+  /*width: 100%;*/
+  /*!*width:33%;*!*/
+  /*display: inline-block;*/
+  /*border: 1px dashed;*/
+  /*!*display: none;*!*/
+/*}*/
+
+/*.top-navigation .sub-nav-industry-insights{*/
+  /*position: absolute;*/
+  /*top:66px;*/
+  /*right:0;*/
+  /*width: 100%;*/
+  /*!*width:33%;*!*/
+  /*display: inline-block;*/
+  /*border: 1px solid;*/
+  /*display: none;*/
+/*}*/
+
+/*.top-navigation a.sub-nav  {*/
+  /*position: absolute;*/
+  /*top:66px;*/
+  /*right:0;*/
+  /*width: 100%;*/
+  /*width:33%;*/
+  /*display: inline-block;*/
+  /*border: 1px solid;*/
+  /*display: none;*/
+/*}*/
+
+/*.top-navigation a.super-sub-nav  {*/
+  /*position: absolute;*/
+  /*top:66px;*/
+  /*!*right:0;*!*/
+  /*height: 100%;*/
+  /*!*width:33%;*!*/
+  /*display: inline-block;*/
+  /*border: 1px solid;*/
+  /*display: none;*/
+/*}*/
+
+/*#our-solutions:hover .sub-nav-our-solutions{*/
+  /*display: block;*/
+/*}*/
+
+/*header .sub-nav :hover, header .sub-nav a:hover {*/
+  /*background-color: #f14848;*/
+  /*color: white;*/
+/*}*/
+
+
+/*nav a:focus {*/
+  /*color: #f14848;*/
+/*}*/
+
+/*nav a.sub-nav:focus,nav a.super-sub-nav:focus  {*/
+  /*background-color: #f14848;*/
+  /*color: white;*/
+/*}*/
+
+/*!*header ul {*!*/
+  /*!*!*display: flex;*!*!*/
+  /*!*list-style: none;*!*/
+  /*!*padding: 0;*!*/
+  /*!*margin: 0;*!*/
+/*!*}*!*/

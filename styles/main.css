@@ -1,7 +1,6 @@
 /*Todo*/
 /*intro, services solutions... new name*/
 
-
 /*Ask alex for calc and flex*/
 /*why comigo styling*/
 /*home services bg image alignment*/
@@ -10,11 +9,15 @@
 /*svg bg color and square*/
 /*Read more blog post*/
 
-
-
 /*General*/
 html {
   box-sizing: border-box;
+}
+
+.list-reset {
+  list-style: none;
+  padding:0;
+  marging:0;
 }
 
 *, *:before, *:after {
@@ -23,6 +26,8 @@ html {
 
 body {
   font-family: ProximaNova, 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  /*padding-top: 66px;*/
 }
 
 @media screen and (max-width: 700px),(max-device-width: 400px) {
@@ -42,8 +47,11 @@ a:focus {
 
 .button {
   padding: 1em;
-  border-radius: 10em;
   position: center;
+}
+
+.button.round {
+  border-radius: 10em;
 }
 
 .main-button {
@@ -65,307 +73,3 @@ a:focus {
   color: #000000;
 }
 
-/*Header area*/
-
-header {
-  display: flex;
-  margin-bottom: 5em;
-}
-
-header nav ul {
-  margin-left: 50%;
-  text-align: center;
-  float: top;
-  border: 1px dashed;
-}
-
-.top-navigation ul {
-  float: right;
-}
-
-nav a.sub-nav  {
-  height: 100%;
-  display: inline-block;
-}
-
-header .sub-nav:hover, header .sub-nav a:hover {
-  background-color: #f14848;
-  color: white;
-}
-
-nav a:focus {
-  color: #f14848;
-}
-
-nav a.sub-nav:focus {
-  background-color: #f14848;
-  color: white;
-}
-
-header ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/*Main strip*/
-
-.main-strip {
-  text-align: center;
-  width: 100%;
-  height: 500px;
-  padding-top: 8em;
-  background-image: url("../assets/main-bg/home-brain-image-new-1920x816.png"), url("../assets/main-bg/home-featured-bg.png");
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
-}
-
-.main-strip h2 {
-  color: #ffffff;
-  font-size: 5em;
-  font-weight: 400;
-  line-height: 1em;
-}
-
-.main-strip div {
-  display: inline-block;
-  width: 70%;
-}
-
-/*Second strip - Why Comigo*/
-
-.second-strip {
-  text-align: center;
-  color: #3d3d3d;
-  height: 350px;
-}
-
-.second-strip div {
-  margin: 0 auto;
-  /*display: inline-block;*/
-  padding: 3em 0;
-  width: 400px;
-
-}
-
-.second-strip h2 {
-  margin: 0;
-  font-size: 4em;
-  font-weight: 100;
-}
-
-.block-center {
-  font-family: Tahoma, sans-serif;
-  font-weight: 100;
-  text-align: center;
-  line-height: 1.4em;
-  font-size: 1em;
-}
-
-/*Third strip - Engage users*/
-.engage {
-  width: 100%;
-  background-image: url("../assets/videos/video-soccer-750x422.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 3em;
-}
-
-/*fourth strip - home-section*/
-
-.home-section {
-  display: flex;
-  height: 600px;
-}
-
-.home-div {
-  margin: 0 auto;
-  display: block;
-  line-height: 1.2em;
-  /*padding-left: 10em;*/
-  padding-top: 15em;
-  width: 50%;
-  font-size: 18px;
-}
-
-.home-div:first-child {
-  padding-left: 20%;
-}
-
-.home-div:nth-child(2) {
-  /*position: absolute;*/
-  left: 20%;
-  right: 0;
-}
-
-.home-div h2 {
-  /*border: none;*/
-  font-size: 2em;
-  line-height: 1em;
-  font-weight: 300;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.enhance-any-tv-service {
-  background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-tv-service-bg1.png");
-  background-position: center top, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 45%, auto;
-}
-
-#deploy-best-in-class-tv-service {
-  background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
-  background-position: left center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 45%, auto;
-}
-
-.enhance-any-tv-service > a {
-  text-align: center;
-  color: #f14848;
-  background-color: white;
-}
-
-/*Fifth strip - your content area*/
-
-.your-content {
-  width: 100%;
-  height: 35em;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-image: url("../assets/other/screen_whos_on.jpg");
-  background-position: right;
-  padding-top: 15em;
-  /*padding-bottom: 15em;*/
-
-}
-
-/*learn more area*/
-
-.learn-more {
-  display: flex;
-}
-
-.learn-more ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/*blog area*/
-
-/*//TODO change id to :nth-child*/
-#comigos-experience {
-  background: url("../assets/blog/ibc_post_EI-750x508.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#what-we-learned {
-  background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#big-data-meets {
-  background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#comigo-will-bring {
-  background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#quality {
-  background-image: url("../assets/blog/post_quality-750x508.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#our-blog {
-  background-color: #f14848;
-  width: calc(100%/6);
-}
-
-.blog {
-  display: flex;
-}
-
-.blog-post-list {
-  width: calc(100%/6*5);
-}
-
-.blog ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.blog-post {
-  display: block;
-  font-size: 0.6rem;
-  width: 20%;
-  height: 45em;
-  color: white;
-}
-
-.blog-post a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/*footer area*/
-
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-top {
-  background-color: #1e2024;
-}
-
-.footer-top ul li {
-  color: #fff;
-}
-
-.footer-top ul li li {
-  color: #7a7a7a;
-}
-
-.footer-top ul li li:hover, .footer-top ul li li a:focus {
-  color: #f14848;
-}
-
-.engage ul h3:hover, .engage ul a:focus {
-  color: #f14848;
-}
-
-#omri-gotlieb-portfolio:hover, #omri-gotlieb-portfolio:focus {
-  color: white;
-}
-
-.footer-bottom ul li:hover, .footer-bottom ul li a:focus {
-  color: white;
-}
-
-.footer-bottom {
-  background-color: #151515;
-  color: white;
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-
-}
