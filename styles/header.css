@@ -24,7 +24,6 @@ header {
   /*vertical-align: middle;*/
 }
 
-
 nav a:focus {
   color: #f14848;
 }
@@ -63,7 +62,7 @@ ul.first-level-nav {
 }
 
 ul.sub-nav{
-  display: block;
+  display: none;
   position: absolute;
   top:100%;
   left:0;
@@ -71,34 +70,47 @@ ul.sub-nav{
   height:50px;
 }
 
-.sub-nav li.second-level-nav{
-  width:33.333%;
-}
-
-.sub-nav li.third-level-nav{
-  width:50%;
-}
-
-.sub-nav li{
-  display: inline-block;
+nav.top-navigation .sub-nav li{
+  display: none;
   background-color: #ffffff;
   margin:0;
   padding:0;
 }
 
-.sub-nav a {
+.sub-nav li.second-level-nav{
+  width:33.333%;
+}
+
+.sub-nav li.third-level-nav{
+  /*display: none;*/
+  width:50%;
+}
+
+
+.sub-nav li a {
   display: block;
   height: 50px;
   width: 100%;
   line-height: 50px;
 }
 
-
+/*Hover effects*/
 
 .sub-nav li a:hover {
   background-color: #f14848;
 }
 
+ul.first-level-nav li:hover > ul.sub-nav{
+  display:block;
+}
+
+.sub-nav li:hover li {
+  display: inline-block;
+}
+
+ul.first-level-nav li:hover .second-level-nav{
+  display: inline-block;
+}
 
 
 
