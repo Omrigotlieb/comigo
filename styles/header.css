@@ -9,13 +9,13 @@ header {
   position: fixed;
   display: block;
   text-align: right;
-  height: 20px;
+  height: 50px;
   width: 100%;
   background: white;
   top: 0;
   right: 0;
-  padding: 0px;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
+  z-index: 3;
 }
 
 #logo {
@@ -32,6 +32,8 @@ nav.top-navigation{
   display: block;
   top:0;
   right:0;
+  left:0;
+  bottom: 0;
   position: relative;
 }
 
@@ -43,7 +45,7 @@ nav.top-navigation ul li {
 }
 
 nav.top-navigation > ul > li + li {
-  margin-left: 22px;
+  margin-left: 26px;
 }
 
 .top-navigation ul {
@@ -78,7 +80,7 @@ nav.top-navigation .sub-nav li{
 }
 
 .sub-nav li.second-level-nav{
-  width:33.333%;
+  width:33.3333333333333%;
 }
 
 .sub-nav li.third-level-nav{

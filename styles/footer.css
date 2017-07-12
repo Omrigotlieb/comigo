@@ -4,23 +4,25 @@
 
 
 footer ul {
+  display: inline-block;
   list-style: none;
   margin: 0;
-  padding-top: 3em;
+  /*padding-top: 3em;*/
 }
 
 .footer-top {
   background-color: #1e2024;
 }
 
-/*.footer-top ul{*/
-/*display: flex;*/
-/*}*/
+.footer-top ul{
+display: flex;
+}
 
 .footer-top ul li {
   color: #fff;
   width: 100%;
   height: 100%;
+  vertical-align: middle;
 }
 
 .footer-top ul li li {
@@ -43,11 +45,31 @@ footer ul {
   color: white;
 }
 
+.footer-bottom > ul {
+  display: inline-block;
+}
+
 .footer-bottom {
+  width: 100%;
   background-color: #151515;
   color: white;
-  display: flex;
+  display: inline-block;
   list-style: none;
-  flex-direction: row;
+  left:0;
+  /*flex-direction: row;*/
+
+}
+
+.social-icons-footer {
+  list-style: none;
+}
+
+ul.social-icons-footer li {
+  display: inline-block;
+  margin-left:22px;
+}
+
+footer-bottom span {
+  display: inline-block;
 
 }
