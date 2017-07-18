@@ -53,10 +53,9 @@ display: flex;
   width: 100%;
   background-color: #151515;
   color: white;
-  display: inline-block;
+  display: block;
   list-style: none;
-  left:0;
-  /*flex-direction: row;*/
+  padding: 1em 0 .5em;
 
 }
 
@@ -64,9 +63,15 @@ display: flex;
   list-style: none;
 }
 
+div.footer-legal {
+  display: block;
+  float: left;
+}
+
+
 ul.social-icons-footer li {
   display: inline-block;
-  margin-left:22px;
+  margin-left: 1em;
 }
 
 footer-bottom span {
